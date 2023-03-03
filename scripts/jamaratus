@@ -1,0 +1,39 @@
+################################################################################
+# f - Load functions.  And nothing more!  See 'ff' for more.
+################################################################################
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+for f in ${DIR}/_*.sh; 
+do 
+    . $f; 
+done
+
+if [ -f ${jamHome}/Secure/env ]
+then
+    . ${jamHome}/Secure/env
+fi
+
+
+################################################################################
+#
+#    KEEP THIS VERY SIMPLE.  This is a 'boot' process so it must need nothing 
+#    other than a 'git pull' of the full library.  It must also be easily 
+#    shared, so it finds its own location rather than depending on any 
+#    personal environmental variables.  It is a script even though it feels 
+#    like a function because trying to make it a function made it too 
+#    dependent on the state of the session.
+#
+#    USE BASH NOT DASH.  This script uses bash shell behavior.  It will not
+#    work on dash, which is the default for Ubuntu.  Change Ubuntu's default
+#    shell to bash, as described elsewhere.  Failure to do so will produce a
+#    'bad substitution' error from Python or other invocations not starting
+#    in bash.
+#
+#    EXPANDING RELATIVE PATHS.  The seemingly complex directory locating 
+#    command at the top of the file is needed to expand relative paths.  The
+#    BASH_SOURCE[0] string my have './foo/bar.sh' in it, so the 'dirname'
+#    cannot be used directly.  By doing 'cd' to it, then 'pwd', we get the 
+#    absolute path.
+#
+################################################################################
+
