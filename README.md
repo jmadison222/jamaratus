@@ -3,7 +3,7 @@
 Assuming you have all system dependencies in place, do this:
 
 * Put everything from the `scripts` directory into any directory in your PATH.
-* Run `. jamaratus` either at your command line or in any script that needs the commands.
+* Run `. jamaratus` at your command line.  There is a space after that dot!
 * Run `line1 Hello` to get the following output, where the line should fit your screen precisely:
 
 ```
@@ -15,6 +15,17 @@ Assuming you have all system dependencies in place, do this:
 * In `scripts`, note the names of the `_*.sh` files.
 * The commands are the string between the `_` and `.sh`.
 * Run those and see how they work.
+
+# Use Within Scripts
+
+If things are working from the command line, do this:
+
+* Put the following string at the top of any shell script:
+
+    . jamaratus
+
+Then use the commands within the script just as you would at the command line.
+
 
 # About the Name
 
