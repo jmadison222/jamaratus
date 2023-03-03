@@ -30,6 +30,7 @@ Then use the commands within the script just as you would at the command line.
 # About the Name
 
 To __jam__ is to play musical instruments with great intensity.  An __apparatus__ is 
-the technical equipment and instruments needed to for a particular activity or purpose.  
-__Jamaratus__ is a collection of Linux shell utilities that make your command line rock!
+the technical equipment and instruments needed to for a particular activity or 
+purpose.  __Jamaratus__ is a collection of Linux shell utilities that make your 
+command line rock!
 
