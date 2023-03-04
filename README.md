@@ -1,6 +1,7 @@
 # Installation
 
-On a robust system, the code might simply work, so let's try that.  Do this:
+On a robust system, you might have all the system dependencies in place, so let's just jump 
+right in.  Do this:
 
 * Put everything from the `scripts` directory into any directory in your PATH.
 * Run `. jamaratus` at your command line.  There is a space after that dot!
@@ -37,7 +38,8 @@ usage # Print P1 in the 'usage' message format.
 ```
 
 # System Dependencies
-If the commands don't just work, they may have system dependencies.  Try these:
+If the commands don't just work, there may be missing system dependencies or
+settings.  Try these:
 
 **Use bash** - These have only been tested thoroughly on bash.
 
@@ -46,7 +48,7 @@ If the commands don't just work, they may have system dependencies.  Try these:
 
 # Use Within Scripts
 
-If things are working from the command line, do this:
+Once things are working on the command line, use the scripts within your scripts by doing this:
 
 * Put the following string at the top of any shell script:
 
