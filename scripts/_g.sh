@@ -127,7 +127,8 @@ _origin() {
 _pat() {
 
     export GPG_TTY=$(tty) # Prompt for password in batch.
-    usage "(eze)#123##"
+    usage "(eze)#123## - For the personal access token from Linux."
+    usage "(pwd)#G#834 - For interactive access from the browser."
     base64 -d ${jamHome}/Linux/git/pat.txt | gpg -d 2>/dev/null | head -1
 
 }

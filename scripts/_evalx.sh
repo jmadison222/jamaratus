@@ -25,7 +25,7 @@ The 'eval' wrapper, mostly to echo the command first.
 
 Special cases:
 
-    evalx "du -hs .git | awk '{print \$1}'" # Escape the dollar sign.
+    evalx "du -hs .git | awk '{print \\\$1}'" # Escape the dollar sign.
 
 Usage: ${FUNCNAME[0]} [action] # Where action is:
 
