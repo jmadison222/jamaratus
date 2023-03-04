@@ -34,7 +34,6 @@ pushdx # The 'pushd' wrapper, mostly to hide the echo to stdout.
 s3 # Manage S3 on AWS.
 snow # Manage Snowflake, the cloud-based relational database.
 usage # Print P1 in the 'usage' message format.
-
 ```
 
 # System Dependencies
