@@ -1,6 +1,6 @@
-# Jamaratus
+**[See the Wiki](https://github.com/jmadison222/jamaratus/wiki) - All documentation is in the Wiki.**
 
-A collection of Linux shell utilities to make your command line efficient and elegant:
+Jamaratus is a collection of Linux shell utilities to make your command line efficient and elegant:
 
 * Super easy to install.
 * Makes routine commands easier to understand and follow.
