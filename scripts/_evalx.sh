@@ -1,17 +1,27 @@
 ################################################################################
-# evalx - The 'eval' wrapper, mostly to echo the command first.  (eval)
+# evalx - The 'eval' wrapper, mostly to echo the command first.
 ################################################################################
 evalx() {
 
 sAction=${1:-"help"}
 
 ################################################################################
-sUseHelp="Help by showing these instructions.  [default]"
 sUseStar="Echo the given string and run it as a command."
 
 sUsage=$(cat <<EOF
 $sDescription
-The 'eval' wrapper, mostly to echo the command first.  (eval)
+The 'eval' wrapper, mostly to echo the command first.
+
+    Shell scripts often do lots of commands.  But when you do them inside 
+    such scripts, you can lose visibility into what is happening.  You can 
+    try "set -x", but this very commonly provides far too much information.
+    Instead, use the "evalx" function.  This will echo the command being
+    used to the screen in a special color, then execute the command.  This
+    gives you just the right level of insight into what commands are being
+    executed in a script.
+
+    You must quote the command string.  Using full quotes so that variables
+    are expanded is likely your most common choice.
 
 Special cases:
 
@@ -20,8 +30,8 @@ Special cases:
 Usage: ${FUNCNAME[0]} [action] # Where action is:
 
     *     $sUseStar
-    help  $sUseHelp
-.
+    help  $sAspectHelp
+ 
 EOF
 )
 
@@ -42,4 +52,6 @@ case $sAction in
 esac
 
 }
+
+################################################################################
 
