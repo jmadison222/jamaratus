@@ -23,7 +23,7 @@ cache # Manage cache files across other components.
 clr # Manage screen colors.  (printf)
 confirm # Return 0 or 1 based on user confirmation.
 dir # Directory listing in various forms.
-evalx # The 'eval' wrapper, mostly to echo the command first.  (eval)
+evalx # The 'eval' wrapper, mostly to echo the command first.
 g # The 'git' wrapper.
 krb # Manage Kerberos.  (kinit, klist, kdestroy)
 line1 # The first-level visual break.  (tput cols, perl, clr)

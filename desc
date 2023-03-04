@@ -1,2 +1,0 @@
-head -3 *.sh | grep " - " | cut -c3- | sed 's/ - / # /g'
-
