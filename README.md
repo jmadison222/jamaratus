@@ -12,9 +12,34 @@ Assuming you have all system dependencies in place, do this:
 --
 ```
 
-* In `scripts`, note the names of the `_*.sh` files.
-* The commands are the string between the `_` and `.sh`.
-* Run those and see how they work.
+* Run any of the following commands:
+
+> action - Print a message in the format that tells the user to take an action.
+> announce - Print the file header of the script that calls this function.
+> aspect - Manage the aspects that are common to functions.
+> cache - Manage cache files across other components.
+> clr - Manage screen colors.  (printf)
+> confirm - Return 0 or 1 based on user confirmation.
+> dir - Directory listing in various forms.
+> evalx - The 'eval' wrapper, mostly to echo the command first.  (eval)
+> g - The 'git' wrapper.
+> krb - Manage Kerberos.  (kinit, klist, kdestroy)
+> line1 - The first-level visual break.  (tput cols, perl, clr)
+> line2 - The second-level message within line1.  (clr)
+> popdx - The 'popd' wrapper, mostly to hide the echo to stdout.
+> prompt - Run some other function in prompt mode.
+> pushdx - The 'pushd' wrapper, mostly to hide the echo to stdout.
+> s3 - Manage S3 on AWS.
+> snow - Manage Snowflake, the cloud-based relational database.
+> usage - Print P1 in the 'usage' message format.
+
+
+# System Dependencies
+
+**Use bash** - These have only been tested thoroughly on bash.
+
+**Use TERM=xterm** - Set the TERM varaible to `term`.  It may work with other settings too.
+
 
 # Use Within Scripts
 
