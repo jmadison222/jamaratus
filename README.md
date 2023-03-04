@@ -40,7 +40,7 @@ usage # Print P1 in the 'usage' message format.
 
 **Use bash** - These have only been tested thoroughly on bash.
 
-**Use TERM=xterm** - Set the TERM varaible to `term`.  It may work with other settings too.
+**Use TERM=xterm** - Set the TERM varaible to `xterm`.  It may work with other settings too.
 
 
 # Use Within Scripts
